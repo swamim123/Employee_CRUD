@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee CRUD OPERATION</title>
+</head>
+<body>
+    <h2 style="border:2px solid black;">EMPLOYEE OPERATIONS </h2><br/><br/>
+
+  <font color="green">{{success_message}}</font>
+     <font color="red">{{error_message}}</font> <br>
+    <form action="/save/" method="post">
+        {% csrf_token %}
+        ID <input type="text" name="eid" value="" readonly id="emp_id"> <br/><br/>
+        NAME <input type="text" name="enm" value="" id="emp_name"> <br/><br/>
+        AGE <input type="text" name="eage" value="" id="emp_age"> <br/><br/>
+        EMAIL <input type="text" name="eemail" value="" id="emp_email"> <br/><br/>
+        ROLE <input type="text" name="role" value="" id="emp_role"> <br/><br/>
+        PHONE_NUM <input type="text" name="ephone" value="" id="emp_phone"> <br/><br/>
+        JOININGDATE <input type="text" name="edate" value="" id="emp_date"> <br/><br/>
+        ADDRESS <input type="text" name="address" value="" id="emp_adr"> <br/><br/>
+        <input type="submit" id="submit">
+    </form>
+
+
+</body>
+</html>
